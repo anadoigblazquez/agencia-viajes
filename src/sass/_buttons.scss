@@ -1,0 +1,38 @@
+.primary-btn {
+    @include btn($purple, $white, $purple);
+    &:hover {
+        background-color: $purple-dark;
+    }
+}
+
+.primary-btn-disabled {
+    @include btn($purple, $white, $purple);
+    &:hover {
+        background-color: $purple-dark;
+    }
+}
+
+.secondary-btn {
+    @include btn($orange, $white, $orange);
+    &:hover {
+        background-color: $orange-secondary;
+    }
+}
+
+.secondary-btn-disabled {
+    @include btn($purple, $grey-secondary-text-accent, $purple);
+    &:hover {
+        background-color: $purple-dark;
+    }
+}
+
+.tertiary-btn {
+    @include btn($grey-tertiary, $grey-secondary-text-accent, $purple);
+    &:hover {
+        background-color: $purple-dark;
+    }
+}
+
+.tertiary-btn--small {
+    background-color: $white;
+}

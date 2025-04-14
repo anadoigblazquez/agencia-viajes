@@ -1,0 +1,83 @@
+.card {
+    flex-basis: 26.4rem;
+    border-radius: $border-radius;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    color: $black-800;
+
+    &__header {
+        height: 18.8rem;
+        position: relative;
+    }
+
+    &__tag {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-weight: 800;
+        background-color: $orange;
+        padding: .8rem 1.2rem;
+        border-radius: 1.5rem;
+    }
+
+    &__body {
+        padding: 1.6rem;  
+    }
+
+    &__subtitle {
+        font-family: $secondary-font-family;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        font-weight: 700;
+        margin-block: 1rem;
+
+        span {
+            font-weight: 500;
+        }
+    }
+
+    &__title {
+        font-family: $main-font-family;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        font-weight: 700;
+    }
+
+    &__footer {
+        padding: 1.6rem;
+        background-color: $light-light-grey; 
+    }
+
+    &__from {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    &__price {
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+        font-weight: 700;  
+    }
+
+    &__see-details {
+        color: $purple;
+        font-weight: 600;
+        font-size: 1.4rem;
+        background: transparent;
+        border: 0;
+        padding: 0;      
+        &::after {
+            content: ""; 
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: $purple;
+        }
+    }
+
+    .col-2 {
+        align-items: center;
+        gap: 0;
+    }
+
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waveless</title>
+    <link rel="stylesheet" href="./dist/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="col-3">
+            <a href="./landing.html"> 
+                <img src="./src/img/header-logo.svg" alt="" sizes="" srcset="">
+            </a>
+
+            <!-- Menú superior -->
+            <nav class="menu">
+                <a 
+                    href="./aventura" 
+                    alt="Aventura" 
+                    class="menu__item menu__item--active"
+                    >
+                    <span class="icon icon--adventure"></span>
+                    Aventura
+                </a>
+                <a 
+                    href="./destinos" 
+                    alt="Destinos"
+                    class="menu__item"
+                    >
+                    <span class="icon icon--destinies"></span>
+                    Destinos
+                </a>
+                <a 
+                    href="./alojamiento" 
+                    alt="Alojamiento"
+                    class="menu__item"
+                    >
+                    <span class="icon icon--accommodation"></span>
+                    Alojamiento
+                </a>
+                <a 
+                    href="./aventura" 
+                    alt="Sobre nosotros"
+                    class="menu__item"
+                    >
+                    Sobre nosotros
+                </a>
+            </nav>
+            <!-- Fin de menú superior -->
+
+            <a 
+                href="./reservar.html"
+                class="header-btn primary-btn primary-btn--large">
+                Reservar
+            </a>
+        </div>
+        </div>
+    </header>
+    <main>
+        <!-- Hero -->
+        <section>
+            <div class="hero">
+                <div class="hero__item">
+                    <img src="./src/img/fondo.png" alt="Ruta por Australia" srcset="" class="hero__img">
+                    <div class="hero__content">
+                        <h2 class="hero__title">Ruta por Australia</h2>
+                        <p class="herro__description">Si te va la aventura, no te lo puedes perder</p>
+                        <a 
+                            href="#" 
+                            alt="Más información" 
+                            title="Más información"
+                            class="secondary-btn secondary-btn--large"
+                            >
+                            Más información
+                        </a>
+                    </div>
+                </div>
+                <button class="hero__btn hero__btn--left"></button>
+                <button class="hero__btn hero__btn--right"></button>
+                <div class="hero__bullets-container">
+                    <button class="hero__bullet hero__bullet--current"></button>
+                    <button class="hero__bullet"></button>
+                </div>
+            </div>
+        </section>
+        <!-- Fin de hero -->
+        <section>
+            <div class="content-wrapper align-center">
+                <h1>Vive tus aventuras</h1>
+                <p>Para los que les gusta explorar y conocer mundo sin complejos</p>
+            </div>
+        </section>
+        
+        <section>
+            <div class="content-wrapper">
+                <div class="col-2">
+                    <!-- Filtros -->
+                    <div class="hide-mobile">
+                        <aside class="filters">
+                            <p class="filters__title align-center">Filtrar mi búsqueda</p>
+                            <form action="" class="">
+                                <div class="filters__item">
+                                    <p class="filters__dropdown-title">
+                                        <span class="icon icon--adventure"></span>
+                                        Aventura
+                                        <span class=""></span>
+                                    </p>
+                                    <div class="filters__dropdown">
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Quads</label>
+                                                <div class="tooltip       "></div>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                                <div class="filters__item">
+                                    <p class="filters__dropdown-title">
+                                        <span class="icon icon--destinies"></span>
+                                        Aventura
+                                        <span class=""></span>
+                                    </p>
+                                    <div class="filters__dropdown">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="filters__item">
+                                    <p class="filters__dropdown-title">
+                                        <span class="icon icon--price"></span>
+                                        Precio
+                                        <span class=""></span>
+                                    </p>
+                                    <div class="filters__dropdown">
+                                        <div class="input">
+                                            <span class="icon icon--price"></span>
+                                            <input type="text" 
+                                                class="input__field"
+                                                placeholder="Mínimo"
+                                                >
+                                        </div>
+                                        <div class="input">
+                                            <span class="icon icon--price"></span>
+                                            <input type="text" 
+                                                class="input__field"
+                                                placeholder="Máximo"
+                                                >
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </aside>
+                    </div>
+                    <!-- Fin de filtros -->
+
+                    <!-- Cards -->
+                    <div>
+                        <h3>Asia</h3>
+                        <div class="col-3">
+                            <!-- Card item -->
+                            <article class="card">
+                                <div class="card__header">
+                                    <img 
+                                        src="./src/img/destino1.jpeg" 
+                                        alt="Foto de categoría"
+                                        class="card__img">
+                                    <p class="card__tag">Quads</p>
+                                </div>
+                                <div class="card__body">
+                                    <p class="card__subtitle">Marruecos, África 
+                                        <span>9 días</span>
+                                    </p>
+                                    <p class="card__title">Descubre Bangkok con Iberojet</p>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="col-2">
+                                        <div class="card__left">
+                                            <p class="card__from">Desde</p>
+                                            <p class="card__price">248,00€</p>
+                                            <button class="card__see-details">Ver desglose</button>
+                                        </div>
+                                        <div class="card__right">
+                                            <a href="" class="tertiary-btn tertiary-btn--small">Reservar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Fin de card item -->
+                            
+                            <!-- Card item -->
+                            <article class="card">
+                                <div class="card__header">
+                                    <img 
+                                        src="./src/img/destino1.jpeg" 
+                                        alt="Foto de categoría"
+                                        class="card__img">
+                                    <p class="card__tag">Quads</p>
+                                </div>
+                                <div class="card__body">
+                                    <p class="card__subtitle">Marruecos, África 
+                                        <span>9 días</span>
+                                    </p>
+                                    <p class="card__title">Descubre Bangkok con Iberojet</p>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="col-2">
+                                        <div class="card__left">
+                                            <p class="card__from">Desde</p>
+                                            <p class="card__price">248,00€</p>
+                                            <button class="card__see-details">Ver desglose</button>
+                                        </div>
+                                        <div class="card__right">
+                                            <a href="" class="tertiary-btn tertiary-btn--small">Reservar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Fin de card item -->
+
+                            <!-- Card item -->
+                            <article class="card">
+                                <div class="card__header">
+                                    <img 
+                                        src="./src/img/destino1.jpeg" 
+                                        alt="Foto de categoría"
+                                        class="card__img">
+                                    <p class="card__tag">Quads</p>
+                                </div>
+                                <div class="card__body">
+                                    <p class="card__subtitle">Marruecos, África 
+                                        <span>9 días</span>
+                                    </p>
+                                    <p class="card__title">Descubre Bangkok con Iberojet</p>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="col-2">
+                                        <div class="card__left">
+                                            <p class="card__from">Desde</p>
+                                            <p class="card__price">248,00€</p>
+                                            <button class="card__see-details">Ver desglose</button>
+                                        </div>
+                                        <div class="card__right">
+                                            <a href="" class="tertiary-btn tertiary-btn--small">Reservar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Fin de card item -->
+                        </div>
+                    </div>
+                    <!-- Fin de cards -->
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.wrapper {
+    @include wrapper(114.0rem);
+}
+
+.content-wrapper {
+    @include wrapper(112.8rem);
+}
+
+.col-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.4rem;
+}
+.col-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.4rem;
+}

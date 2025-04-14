@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "sass": "^1.86.3"
+  },
+  "name": "prueba-plexus-ana-doig",
+  "version": "1.0.0",
+  "description": "Prueba Waveless",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ana Doig",
+  "license": "ISC"
+}

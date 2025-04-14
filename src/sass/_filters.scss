@@ -1,0 +1,17 @@
+.filters {
+    width: 26.4rem;
+    background-color: $light-light-grey;
+    border-radius: $border-radius;
+    padding: 3rem 2.5rem;
+    margin-top: 3.2rem;
+
+    &__title {
+        font-family: "Syne", sans-serif;
+        margin-bottom: 3rem;
+        border-bottom: 1px solid $light-light-grey;
+    }
+
+    &__dropdown {
+        padding: 2rem 0 2rem;
+    }
+}

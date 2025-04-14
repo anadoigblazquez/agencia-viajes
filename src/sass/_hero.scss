@@ -1,0 +1,83 @@
+.hero {
+    position: relative;
+    height: 40rem;
+    color: $white;
+    
+    &__img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }
+
+    &__content {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        transform: translatey(-50%);
+
+        a {
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+        }
+    }
+
+    &__btn {
+        background-color: rgba(98, 47, 96, 0.32);
+        height: 4rem;
+        width: 4rem;
+        border: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &--right {
+            right: 0;
+            background-image: url('../img/symbols/chevron-right.svg');
+        }
+
+        &--left {
+            left: 0;
+            background-image: url('../img/symbols/chevron-left.svg');
+        }
+    }
+
+    &__bullets-container {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 3.2rem;
+    }
+
+    &__bullet {
+        width: 1rem;
+        height: 1rem;
+        padding: 0;
+        border-radius: .5rem;
+        background-color: #E6E6F3; 
+        box-shadow: inset 0px 0px 0px 1px $white;
+        border: 0;
+
+        &:hover {
+            background-color: #f8f7f8;
+        }
+
+        &:not(:last-child) {
+            margin-right: .5rem;
+        }
+            
+
+        &--current {
+            background-color: $orange;
+
+            &:hover {
+                background-color: #d67843;
+                box-shadow: inset 0px 0px 0px 1px #E6E6F3;
+            }
+        }
+    }
+}
