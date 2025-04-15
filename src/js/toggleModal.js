@@ -1,7 +1,6 @@
 const modal = document.querySelector('.details');
 const trigger = document.querySelectorAll('.card__see-details');
 const closeModalBtn = document.querySelector('.details__close');
-console.log(modal);
 export const toggleModal = () => {
     
     trigger.forEach(element => {

@@ -13,7 +13,5 @@ export const toggleMobileMenu = (element, buttonClass, closeButtonClass, toggleC
     // Cerrar menú
     closeMenu.addEventListener("click", (e) => {
         mobileMenu.classList.remove(toggleClass);
-
-        console.log(mobileMenu);
     })
 }
