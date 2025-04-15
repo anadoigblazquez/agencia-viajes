@@ -36,3 +36,29 @@
 .tertiary-btn--small {
     background-color: $white;
 }
+
+.filters-button {
+    @include btn($grey-tertiary, $black-900, $light-pink);
+    font-weight: 600;
+    display: none;
+    margin-bottom: 2.4rem;
+
+    &:hover {
+        background-color: $white;
+    }
+
+    &__icon {
+        display: inline-block;
+        vertical-align: middle;
+        width: 2.4rem;
+        height: 2.4rem;
+        background-image: url('../img/symbols/icono-filter.svg');
+        background-size: cover;
+        background-position: center;
+        margin-right: .5rem;
+    }
+
+    @media (max-width: $tablet) {
+        display: block;
+    }
+}

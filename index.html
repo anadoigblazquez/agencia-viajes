@@ -8,11 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+    <script src="./src/js/index.js" type="module" defer></script>
 </head>
 <body>
     <header>
         <div class="wrapper">
-            <div class="col-3">
+            <div class="header-container">
             <a href="./landing.html"> 
                 <img src="./src/img/header-logo.svg" alt="" sizes="" srcset="">
             </a>
@@ -50,6 +52,8 @@
                     >
                     Sobre nosotros
                 </a>
+
+                
             </nav>
             <!-- Fin de menú superior -->
 
@@ -58,10 +62,62 @@
                 class="header-btn primary-btn primary-btn--large">
                 Reservar
             </a>
+
+            <!-- Menú mobile -->
+
+            <div class="menu-mobile">
+                <i class="menu-mobile__icon js-mobile-btn">
+                    <img 
+                        src="./src/img/symbols/icono-menu-burger.svg" 
+                        alt="Menú mobile">
+                </i>
+                
+
+                <nav class="menu-mobile__nav js-menu-mobile">
+                    <i class="menu-mobile__close js-close-menu">
+                        <img 
+                        src="./src/img/symbols/icono-close.svg" 
+                        alt="Cerrar menu mobile"> 
+                    </i>
+                    <a 
+                        href="./aventura" 
+                        alt="Aventura"
+                        class="menu-mobile__item"
+                        >
+                        Aventura
+                    </a>
+                    <a 
+                        href="./destinos" 
+                        alt="Destinos"
+                        class="menu-mobile__item"
+                        >
+                        Destinos
+                    </a>
+                    <a 
+                        href="./alojamiento" 
+                        alt="Alojamiento"
+                        class="menu-mobile__item"
+                        >
+                        Alojamiento
+                    </a>
+                    <a 
+                        href="./aventura" 
+                        alt="Sobre nosotros"
+                        class="menu-mobile__item"
+                        >
+                        Sobre nosotros
+                    </a> 
+                </nav>
+            </div>
+
+            <!-- Fin de menú mobile -->
         </div>
         </div>
     </header>
     <main>
+        
+
+
         <!-- Hero -->
         <section>
             <div class="hero">
@@ -69,7 +125,7 @@
                     <img src="./src/img/fondo.png" alt="Ruta por Australia" srcset="" class="hero__img">
                     <div class="hero__content">
                         <h2 class="hero__title">Ruta por Australia</h2>
-                        <p class="herro__description">Si te va la aventura, no te lo puedes perder</p>
+                        <p class="hero__subtitle">Si te va la aventura, no te lo puedes perder</p>
                         <a 
                             href="#" 
                             alt="Más información" 
@@ -88,7 +144,8 @@
                 </div>
             </div>
         </section>
-        <!-- Fin de hero -->
+<!-- Fin de hero ------------>
+
         <section>
             <div class="content-wrapper align-center">
                 <h1>Vive tus aventuras</h1>
@@ -99,12 +156,18 @@
         <section>
             <div class="content-wrapper">
                 <div class="col-2">
+
                     <!-- Filtros -->
-                    <div class="hide-mobile">
+                    <div>
                         <aside class="filters">
                             <p class="filters__title align-center">Filtrar mi búsqueda</p>
-                            <form action="" class="">
-                                <div class="filters__item">
+                            <i class="filters__close js-close-filters">
+                                <img 
+                                src="./src/img/symbols/icono-close.svg" 
+                                alt="Cerrar filtros"> 
+                            </i>
+                            <form action="" class="filters__form">
+                                <div class="filters__item filters__item--active">
                                     <p class="filters__dropdown-title">
                                         <span class="icon icon--adventure"></span>
                                         Aventura
@@ -112,10 +175,56 @@
                                     </p>
                                     <div class="filters__dropdown">
                                         <ul>
-                                            <li>
-                                                <input type="checkbox" name="" id="">
-                                                <label for="">Quads</label>
-                                                <div class="tooltip       "></div>
+                                            <li class="filters__check-container">
+                                                <label for="check-1" class="filters__label">
+                                                    <input 
+                                                        id="check-1"
+                                                        type="checkbox" 
+                                                        name="" 
+                                                        class="filters__check"/>
+                                                    Checkbox
+                                                    
+                                                </label>
+                                                <div class="tooltip">
+                                                    <img src="./src/img/symbols/icono-tooltip.svg" alt="Información adicional">
+                                                    <div class="tooltip__content">
+                                                        <p>Lorem ipsum dolor sit aetme</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="filters__check-container">
+                                                <label for="check-2" class="filters__label">
+                                                    <input 
+                                                        id="check-2"
+                                                        type="checkbox" 
+                                                        name="" 
+                                                        class="filters__check"/>
+                                                    Checkbox
+                                                    
+                                                </label>
+                                                <div class="tooltip">
+                                                    <img src="./src/img/symbols/icono-tooltip.svg" alt="Información adicional">
+                                                    <div class="tooltip__content">
+                                                        <p>Lorem ipsum dolor sit aetme</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="filters__check-container">
+                                                <label for="check-3" class="filters__label">
+                                                    <input 
+                                                        id="check-3"
+                                                        type="checkbox" 
+                                                        name="" 
+                                                        class="filters__check"/>
+                                                    Checkbox
+                                                    
+                                                </label>
+                                                <div class="tooltip">
+                                                    <img src="./src/img/symbols/icono-tooltip.svg" alt="Información adicional">
+                                                    <div class="tooltip__content">
+                                                        <p>Lorem ipsum dolor sit aetme</p>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                         
@@ -124,11 +233,124 @@
                                 <div class="filters__item">
                                     <p class="filters__dropdown-title">
                                         <span class="icon icon--destinies"></span>
-                                        Aventura
+                                        Destinos
                                         <span class=""></span>
                                     </p>
                                     <div class="filters__dropdown">
-                                        <div></div>
+                                        <ul>
+                                            <li class="filters__check-container">
+                                                <label for="check-4" class="filters__label">
+                                                    <input 
+                                                        id="check-4"
+                                                        type="checkbox" 
+                                                        name="" 
+                                                        class="filters__check"/>
+                                                    Checkbox
+                                                    
+                                                </label>
+                                                <div class="tooltip">
+                                                    <img src="./src/img/symbols/icono-tooltip.svg" alt="Información adicional">
+                                                    <div class="tooltip__content">
+                                                        <p>Lorem ipsum dolor sit aetme</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="filters__check-container">
+                                                <label for="check-6" class="filters__label">
+                                                    <input 
+                                                        id="check-6"
+                                                        type="checkbox" 
+                                                        name="" 
+                                                        class="filters__check"/>
+                                                    Checkbox
+                                                    
+                                                </label>
+                                                <div class="tooltip">
+                                                    <img src="./src/img/symbols/icono-tooltip.svg" alt="Información adicional">
+                                                    <div class="tooltip__content">
+                                                        <p>Lorem ipsum dolor sit aetme</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="filters__check-container">
+                                                <label for="check-7" class="filters__label">
+                                                    <input
+                                                        id="check-7" 
+                                                        type="checkbox" 
+                                                        name="" 
+                                                        class="filters__check"/>
+                                                    Checkbox
+                                                    
+                                                </label>
+                                                <div class="tooltip">
+                                                    <img src="./src/img/symbols/icono-tooltip.svg" alt="Información adicional">
+                                                    <div class="tooltip__content">
+                                                        <p>Lorem ipsum dolor sit aetme</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="filters__item">
+                                    <p class="filters__dropdown-title">
+                                        <span class="icon icon--destinies"></span>
+                                        Alojamiento
+                                        <span class=""></span>
+                                    </p>
+                                    <div class="filters__dropdown">
+                                        <ul>
+                                            <li class="filters__check-container">
+                                                <label for="check-8" class="filters__label">
+                                                    <input
+                                                        id="check-8" 
+                                                        type="checkbox" 
+                                                        name="" 
+                                                        class="filters__check"/>
+                                                    Checkbox
+                                                    
+                                                </label>
+                                                <div class="tooltip">
+                                                    <img src="./src/img/symbols/icono-tooltip.svg" alt="Información adicional">
+                                                    <div class="tooltip__content">
+                                                        <p>Lorem ipsum dolor sit aetme</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="filters__check-container">
+                                                <label for="check-9" class="filters__label">
+                                                    <input 
+                                                        id="check-9"
+                                                        type="checkbox" 
+                                                        name="" 
+                                                        class="filters__check"/>
+                                                    Checkbox
+                                                </label>
+                                                <div class="tooltip">
+                                                    <img src="./src/img/symbols/icono-tooltip.svg" alt="Información adicional">
+                                                    <div class="tooltip__content">
+                                                        <p>Lorem ipsum dolor sit aetme</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="filters__check-container">
+                                                <label for="check-10" class="filters__label">
+                                                    <input 
+                                                        id="check-10"
+                                                        type="checkbox" 
+                                                        name="" 
+                                                        class="filters__check"/>
+                                                    Checkbox
+                                                    
+                                                </label>
+                                                <div class="tooltip">
+                                                    <img src="./src/img/symbols/icono-tooltip.svg" alt="Información adicional">
+                                                    <div class="tooltip__content">
+                                                        <p>Lorem ipsum dolor sit aetme</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div class="filters__item">
@@ -161,97 +383,280 @@
 
                     <!-- Cards -->
                     <div>
-                        <h3>Asia</h3>
-                        <div class="col-3">
-                            <!-- Card item -->
-                            <article class="card">
-                                <div class="card__header">
-                                    <img 
-                                        src="./src/img/destino1.jpeg" 
-                                        alt="Foto de categoría"
-                                        class="card__img">
-                                    <p class="card__tag">Quads</p>
-                                </div>
-                                <div class="card__body">
-                                    <p class="card__subtitle">Marruecos, África 
-                                        <span>9 días</span>
-                                    </p>
-                                    <p class="card__title">Descubre Bangkok con Iberojet</p>
-                                </div>
-                                <div class="card__footer">
-                                    <div class="col-2">
-                                        <div class="card__left">
-                                            <p class="card__from">Desde</p>
-                                            <p class="card__price">248,00€</p>
-                                            <button class="card__see-details">Ver desglose</button>
-                                        </div>
-                                        <div class="card__right">
-                                            <a href="" class="tertiary-btn tertiary-btn--small">Reservar</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <!-- Fin de card item -->
-                            
-                            <!-- Card item -->
-                            <article class="card">
-                                <div class="card__header">
-                                    <img 
-                                        src="./src/img/destino1.jpeg" 
-                                        alt="Foto de categoría"
-                                        class="card__img">
-                                    <p class="card__tag">Quads</p>
-                                </div>
-                                <div class="card__body">
-                                    <p class="card__subtitle">Marruecos, África 
-                                        <span>9 días</span>
-                                    </p>
-                                    <p class="card__title">Descubre Bangkok con Iberojet</p>
-                                </div>
-                                <div class="card__footer">
-                                    <div class="col-2">
-                                        <div class="card__left">
-                                            <p class="card__from">Desde</p>
-                                            <p class="card__price">248,00€</p>
-                                            <button class="card__see-details">Ver desglose</button>
-                                        </div>
-                                        <div class="card__right">
-                                            <a href="" class="tertiary-btn tertiary-btn--small">Reservar</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <!-- Fin de card item -->
+                        <div class="cards-container">
+                            <!-- Botón de filtros en mobile -->
 
-                            <!-- Card item -->
-                            <article class="card">
-                                <div class="card__header">
-                                    <img 
-                                        src="./src/img/destino1.jpeg" 
-                                        alt="Foto de categoría"
-                                        class="card__img">
-                                    <p class="card__tag">Quads</p>
-                                </div>
-                                <div class="card__body">
-                                    <p class="card__subtitle">Marruecos, África 
-                                        <span>9 días</span>
-                                    </p>
-                                    <p class="card__title">Descubre Bangkok con Iberojet</p>
-                                </div>
-                                <div class="card__footer">
-                                    <div class="col-2">
-                                        <div class="card__left">
-                                            <p class="card__from">Desde</p>
-                                            <p class="card__price">248,00€</p>
-                                            <button class="card__see-details">Ver desglose</button>
-                                        </div>
-                                        <div class="card__right">
-                                            <a href="" class="tertiary-btn tertiary-btn--small">Reservar</a>
+                            <div class="button-container">
+                                <button class="filters-button filters-button--small"
+                                    accesskey=""
+                                    title="Botón para mostrar filtros">
+                                    <span class="filters-button__icon"></span>
+                                    Ver filtros
+                                </button>
+                            </div>
+
+                            <!-- Fin de botón de filtros en mobile -->
+
+                            <h3>Asia</h3>
+                            <!-- Desglose de precios ---------->
+                            
+                            <div class="details">
+                                <article>
+                                    <div class="details__header">
+                                        <p class="details__header-title">Desglose de precios</p>
+                                        <span class="details__close"></span>
+                                    </div>
+                                    <div class="details__body">
+                                        <p class="details__title">Marruecos, África <span>9 días</span></p>
+                                        <dl class="details__content">
+                                            <div class="col-2-inner">
+                                                <dt class="details__content-left">Precio antes de impuestos</dt>
+                                                <dd class="details__content-right">1.124,00€</dd>
+                                            </div>
+                                            <div class="col-2-inner">
+                                                <dt class="details__content-left">Impuesto</dt>
+                                                <dd class="details__content-right">4,43€</dd>
+                                            </div>
+
+                                            <div class="col-2-inner">
+                                                <dt class="details__content-left">Lorem ipsum</dt>
+                                                <dd class="details__content-right">150,42</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                    <div class="details__footer">
+                                        <dl>
+                                            <div class="col-2-inner">
+                                                <dt class="details__footer-left">Precio final</dt>
+                                                <dd class="details__footer-right">2.455,00€</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Fin de desglose de precios -->
+                        
+                            <div class="col-3">
+                                <!-- Card item -->
+                                <article class="card">
+                                    <div class="card__header">
+                                        <img 
+                                            src="./src/img/destino1.jpeg" 
+                                            alt="Foto de categoría"
+                                            class="card__img">
+                                        <p class="card__tag">Quads</p>
+                                    </div>
+                                    <div class="card__body">
+                                        <p class="card__subtitle">Marruecos, África 
+                                            <span>9 días</span>
+                                        </p>
+                                        <p class="card__title">Descubre Bangkok con Iberojet</p>
+                                    </div>
+                                    <div class="card__footer">
+                                        <div class="col-2-inner">
+                                            <div class="card__left">
+                                                <p class="card__from">Desde</p>
+                                                <p class="card__price">248,00€</p>
+                                                <button class="card__see-details">Ver desglose</button>
+                                            </div>
+                                            <div class="card__right">
+                                                <a href="" class="tertiary-btn tertiary-btn--small">Reservar</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </article>
-                            <!-- Fin de card item -->
+                                    <div class="card__footer-mobile">
+                                        <div class="col-2-inner">
+                                            <div class="card__left">
+                                                
+                                                <button class="card__see-details">Ver desglose</button>
+                                            </div>
+                                            <div class="card__right">
+                                                <p class="card__from">Desde</p>
+                                                <p class="card__price">248,00€</p>
+                                            </div>
+                                            
+                                        </div>
+                                        <a href="" class="tertiary-btn tertiary-btn--small">Reservar</a>
+                                    </div>
+                                </article>
+                                <!-- Fin de card item -->
+
+                                <!-- Card item -->
+                                <article class="card">
+                                    <div class="card__header">
+                                        <img 
+                                            src="./src/img/destino1.jpeg" 
+                                            alt="Foto de categoría"
+                                            class="card__img">
+                                        <p class="card__tag">Quads</p>
+                                    </div>
+                                    <div class="card__body">
+                                        <p class="card__subtitle">Marruecos, África 
+                                            <span>9 días</span>
+                                        </p>
+                                        <p class="card__title">Descubre Bangkok con Iberojet</p>
+                                    </div>
+                                    <div class="card__footer">
+                                        <div class="col-2-inner">
+                                            <div class="card__left">
+                                                <p class="card__from">Desde</p>
+                                                <p class="card__price">248,00€</p>
+                                                <button class="card__see-details">Ver desglose</button>
+                                            </div>
+                                            <div class="card__right">
+                                                <a href="" class="tertiary-btn tertiary-btn--small">Reservar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer-mobile">
+                                        <div class="col-2-inner">
+                                            <div class="card__left">
+                                                
+                                                <button class="card__see-details">Ver desglose</button>
+                                            </div>
+                                            <div class="card__right">
+                                                <p class="card__from">Desde</p>
+                                                <p class="card__price">248,00€</p>
+                                            </div>
+                                            
+                                        </div>
+                                        <a href="" class="tertiary-btn tertiary-btn--small">Reservar</a>
+                                    </div>
+                                </article>
+                                <!-- Fin de card item -->
+
+                                <!-- Card item -->
+                                <article class="card">
+                                    <div class="card__header">
+                                        <img 
+                                            src="./src/img/destino1.jpeg" 
+                                            alt="Foto de categoría"
+                                            class="card__img">
+                                        <p class="card__tag">Quads</p>
+                                    </div>
+                                    <div class="card__body">
+                                        <p class="card__subtitle">Marruecos, África 
+                                            <span>9 días</span>
+                                        </p>
+                                        <p class="card__title">Descubre Bangkok con Iberojet</p>
+                                    </div>
+                                    <div class="card__footer">
+                                        <div class="col-2-inner">
+                                            <div class="card__left">
+                                                <p class="card__from">Desde</p>
+                                                <p class="card__price">248,00€</p>
+                                                <button class="card__see-details">Ver desglose</button>
+                                            </div>
+                                            <div class="card__right">
+                                                <a href="" class="tertiary-btn tertiary-btn--small">Reservar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer-mobile">
+                                        <div class="col-2-inner">
+                                            <div class="card__left">
+                                                
+                                                <button class="card__see-details">Ver desglose</button>
+                                            </div>
+                                            <div class="card__right">
+                                                <p class="card__from">Desde</p>
+                                                <p class="card__price">248,00€</p>
+                                            </div>
+                                            
+                                        </div>
+                                        <a href="" class="tertiary-btn tertiary-btn--small">Reservar</a>
+                                    </div>
+                                </article>
+                                <!-- Fin de card item -->
+                                
+                                <!-- Card item -->
+                                <article class="card">
+                                    <div class="card__header">
+                                        <img 
+                                            src="./src/img/destino1.jpeg" 
+                                            alt="Foto de categoría"
+                                            class="card__img">
+                                        <p class="card__tag">Quads</p>
+                                    </div>
+                                    <div class="card__body">
+                                        <p class="card__subtitle">Marruecos, África 
+                                            <span>9 días</span>
+                                        </p>
+                                        <p class="card__title">Descubre Bangkok con Iberojet</p>
+                                    </div>
+                                    <div class="card__footer">
+                                        <div class="col-2-inner">
+                                            <div class="card__left">
+                                                <p class="card__from">Desde</p>
+                                                <p class="card__price">248,00€</p>
+                                                <button class="card__see-details">Ver desglose</button>
+                                            </div>
+                                            <div class="card__right">
+                                                <a href="" class="tertiary-btn tertiary-btn--small">Reservar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer-mobile">
+                                        <div class="col-2-inner">
+                                            <div class="card__left">
+                                                
+                                                <button class="card__see-details">Ver desglose</button>
+                                            </div>
+                                            <div class="card__right">
+                                                <p class="card__from">Desde</p>
+                                                <p class="card__price">248,00€</p>
+                                            </div>
+                                            
+                                        </div>
+                                        <a href="" class="tertiary-btn tertiary-btn--small">Reservar</a>
+                                    </div>
+                                </article>
+                                <!-- Fin de card item -->
+
+                                <!-- Card item -->
+                                <article class="card">
+                                    <div class="card__header">
+                                        <img 
+                                            src="./src/img/destino1.jpeg" 
+                                            alt="Foto de categoría"
+                                            class="card__img">
+                                        <p class="card__tag">Quads</p>
+                                    </div>
+                                    <div class="card__body">
+                                        <p class="card__subtitle">Marruecos, África 
+                                            <span>9 días</span>
+                                        </p>
+                                        <p class="card__title">Descubre Bangkok con Iberojet</p>
+                                    </div>
+                                    <div class="card__footer">
+                                        <div class="col-2-inner">
+                                            <div class="card__left">
+                                                <p class="card__from">Desde</p>
+                                                <p class="card__price">248,00€</p>
+                                                <button class="card__see-details">Ver desglose</button>
+                                            </div>
+                                            <div class="card__right">
+                                                <a href="" class="tertiary-btn tertiary-btn--small">Reservar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer-mobile">
+                                        <div class="col-2-inner">
+                                            <div class="card__left">
+                                                
+                                                <button class="card__see-details">Ver desglose</button>
+                                            </div>
+                                            <div class="card__right">
+                                                <p class="card__from">Desde</p>
+                                                <p class="card__price">248,00€</p>
+                                            </div>
+                                            
+                                        </div>
+                                        <a href="" class="tertiary-btn tertiary-btn--small">Reservar</a>
+                                    </div>
+                                </article>
+                                <!-- Fin de card item -->
+                            </div>
                         </div>
                     </div>
                     <!-- Fin de cards -->
@@ -261,6 +666,15 @@
         
         
     </main>
-    <footer></footer>
+    <footer class="footer align-center">
+        <div class="content-wrapper">
+            <figure class="footer__logo">
+                <img src="./src/img/header-logo.svg" alt="">
+            </figure>
+        </div>
+        <div class="footer__banner">
+            <p class="footer__copyrigth">@2024 Waveless - Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

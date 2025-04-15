@@ -13,6 +13,18 @@ body {
     font-weight: 400;
 }
 
+header {
+    @media (max-width: $tablet) {
+        height: 8rem;
+        padding: 2.4rem;
+
+        .col-3 {
+            flex-direction: row;
+            align-items: self-start;
+        }
+    }
+}
+
 section {
     margin-bottom: 7.2rem;
 }
@@ -28,9 +40,15 @@ h1 {
         font-size: 2.2rem;
         line-height: 2.2rem;
     }
+
+    @media (max-width: $tablet-small) {
+        font-size: 3rem;
+
+        + p {
+           font-size: 2rem; 
+        }
+    }
 }
-
-
 
 h2 {
     font-family: $secondary-font-family;
@@ -53,6 +71,8 @@ p {
 
 ul {
     list-style: none;
+    padding: 0 0 0 2rem;   
+    margin: 0;
 }
 
 img {
@@ -61,11 +81,13 @@ img {
     object-fit: cover;
 }
 
+dl {
+    margin: 0;
+}
+
 .align-center {
     text-align: center;
 }
-
-
 
 .icon {
     display: inline-block;
@@ -89,3 +111,4 @@ img {
         background-image: url('../img/symbols/icono-precio.svg');
     }
 }
+

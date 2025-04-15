@@ -1,0 +1,46 @@
+{
+    "asia": [
+        {
+            "name": "Tokio",
+            "id": 1,
+            "img": "../img/destino1.jpeg",
+            "country": "Japón",
+            "description": "Descubre Tokio con Iberojet",
+            "duration": 9,
+            "price": 1124,
+            "category": "quads"
+        },
+        {
+            "name": "Seúl",
+            "id": 2,
+            "img": "../img/destino2.jpeg",
+            "country": "Corea del Sur",
+            "description": "Descubre Seúl con Iberojet",
+            "duration": 9,
+            "price": 1200,
+            "category": "quads"
+        }
+    ],
+    "áfrica": [
+        {
+            "name": "El Cairo",
+            "id": 3,
+            "img": "../img/destino1.jpeg",
+            "country": "Egipto",
+            "description": "Descubre El Cairo con Iberojet",
+            "duration": 9,
+            "price": 784,
+            "category": "quads"
+        },
+        {
+            "name": "Marrakech",
+            "id": 4,
+            "img": "../img/destino3.jpeg",
+            "country": "Marruecos",
+            "description": "Descubre Marrakech con Iberojet",
+            "duration": 10,
+            "price": 1200,
+            "category": "quads"
+        }
+    ]
+}

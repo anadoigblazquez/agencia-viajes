@@ -20,7 +20,7 @@
             font-size: 2rem;
         }
 
-        &--small {
+        &--medium {
             padding: 1.2rem 4.0rem;
             font-size: 1.6rem;
         }
@@ -30,6 +30,22 @@
             font-size: 1.6rem;
             
         }
+}
+
+@mixin close-btn($top, $right, $bottom, $left) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    left: $left;
+    bottom: $bottom;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
 }
     
     

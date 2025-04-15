@@ -9,6 +9,17 @@
         width: 100%;
     }
 
+    &__title {
+        color: $white;
+        margin-bottom: 2.5rem;
+    }
+
+    &__subtitle {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+        font-weight: 500;
+    }
+
     &__content {
         width: 100%;
         text-align: center;

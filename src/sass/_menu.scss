@@ -29,3 +29,74 @@
 
     
 }
+
+header {
+    position: relative;
+}
+
+.menu-mobile {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    &__icon {
+        display: block;
+        width: 3.2rem;
+        height: 3.2rem;
+        align-self: flex-end;
+    }
+
+    &__close {
+        position: absolute;
+        left: 1.5rem;
+        top: 1.5rem;
+    }
+
+    &__nav {
+        background-color: $white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 2rem;
+        padding: 3rem 1.6rem;
+        position: absolute;
+        width: 20rem;
+        right: 0;
+        top: 0;
+        bottom: -18rem;
+        z-index: 100;
+        margin-right: 0;
+        opacity: 0;
+        z-index: -1;
+        transition: all ease .3s;
+
+        &--visible {
+            opacity: 1;
+            margin-right: 0;
+            z-index: 10;
+        }
+
+        &--hidden {
+            margin-right: -100%;
+            opacity: 0;
+        }
+    }
+
+
+}
+
+@media (max-width: $tablet) {
+        .menu {
+            display: none;
+        }
+
+        .header-btn {
+            display: none;
+        }
+
+        .menu-mobile {
+            display: flex;
+        }
+    }
